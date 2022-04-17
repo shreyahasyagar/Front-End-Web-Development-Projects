@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Blog | Shreya Hasyagar </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn-icons-png.flaticon.com/512/6646/6646438.png">
+
+    <!-- Remix icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Swiper.js styles -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+
+    <header class="header" id="header">
+
+        <nav class="navbar container">
+            <a href="index.html">
+                <h2 class="logo">NewsBlog</h2>
+            </a>
+
+            <div class="menu" id="menu">
+                <ul class="list">
+                    <li class="list-item">
+                        <a href="index.html" class="list-link current">Home</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="index.html" class="list-link">Categories</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#newsletter" class="list-link">Reviews</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#trending-news" class="list-link">News</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#newsletter" class="list-link">Membership</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#newsletter" class="list-link">Contact</a>
+                    </li>
+                    <li class="list-item screen-lg-hidden">
+                        <a href="signin.html" class="list-link">Sign in</a>
+                    </li>
+                    <li class="list-item screen-lg-hidden">
+                        <a href="signup.html" class="list-link">Sign up</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- for other nav bar stuff -->
+
+            <div class="list list-right">
+                <button class="btn place-items-center" id="theme-toggle-btn">
+                    <i class="ri-sun-line sun-icon"></i>
+                    <i class="ri-moon-line moon-icon"></i>
+                </button>
+
+                <button class="btn place-items-center" id="search-icon">
+                    <i class="ri-search-line"></i>
+                </button>
+
+                <button class="btn place-items-center screen-lg-hidden menu-toggle-icon" id="menu-toggle-icon">
+                    <i class="ri-menu-3-line open-menu-icon"></i>
+                    <i class="ri-close-line close-menu-icon"></i>
+                </button>
+
+                <a href="#" class="list-link screen-sm-hidden">Sign in</a>
+                <a href="#" class="btn sign-up-btn fancy-border screen-sm-hidden">
+                    <span>Sign up</span>
+                </a>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- Search -->
+    <div class="search-form-container container" id="search-form-container">
+
+        <div class="form-container-inner">
+
+            <form action="" class="form">
+                <input class="form-input" type="text" placeholder="What are you looking for?">
+                <button class="btn form-btn" type="submit">
+                    <i class="ri-search-line"></i>
+                </button>
+            </form>
+            <span class="form-note">Or press ESC to close.</span>
+
+        </div>
+
+        <button class="btn form-close-btn place-items-center" id="form-close-btn">
+            <i class="ri-close-line"></i>
+        </button>
+
+    </div>
+
+
+
+    <!-- Featured articles -->
+    <section class="featured-articles section section-header-offset">
+
+        <div class="featured-articles-container container d-grid">
+
+            <div class="featured-content d-grid">
+
+                <div class="headline-banner">
+                    <h3 class="headline fancy-border">
+                        <span class="place-items-center">Breaking news</span>
+                    </h3>
+                    <span class="headline-description">Elon Musk takes share in Twitter...</span>
+                </div>
+
+
+
+                <a href="post.html" class="article featured-article featured-article-1">
+                    <img src="images/featured/featured-1.jpg" alt="" class="article-image">
+                    <span class="article-category">Technology</span>
+
+                    <div class="article-data-container">
+
+                        <div class="article-data">
+                            <span>Apr 4th 2022</span>
+                            <span class="article-data-spacer"></span>
+                            <span>8 Min read</span>
+                        </div>
+
+                        <h3 class="title article-title">Advancement of VR</h3>
+
+                    </div>
+                </a>
+
+                <a href="post2.html" class="article featured-article featured-article-2">
+                    <img src="images/featured/featured-2.jpg" alt="" class="article-image">
+                    <span class="article-category">Food</span>
+
+                    <div class="article-data-container">
+
+                        <div class="article-data">
+                            <span>Apr 12th 2022</span>
+                            <span class="article-data-spacer"></span>
+                            <span>9 Min read</span>
+                        </div>
+
+                        <h3 class="title article-title">Fine Dining 101</h3>
+
+                    </div>
+                </a>
+
+                <a href="post3.html" class="article featured-article featured-article-3">
+                    <img src="images/featured/featured-3.jpg" alt="" class="article-image">
+                    <span class="article-category">Health</span>
+
+                    <div class="article-data-container">
+
+                        <div class="article-data">
+                            <span>Apr 17th 2022</span>
+                            <span class="article-data-spacer"></span>
+                            <span>10 Min read</span>
+                        </div>
+
+                        <h3 class="title article-title">Fat Loss Addiction</h3>
+
+                    </div>
+                </a>
+
+            </div>
+
+            <!-- Sidebar news -->
+
+            <div class="sidebar d-grid" id="trending-news">
+
+                <h3 class="title featured-content-title">Trending news</h3>
+
+                <a href="https://vaya.in/10-quick-snack-ideas-for-munching/" class="trending-news-box">
+                    <div class="trending-news-img-box">
+                        <span class="trending-number place-items-center">01</span>
+                        <img src="images/trending/trending_5.jpg" alt="Trending news 1" class="article-image">
+                    </div>
+
+                    <div class="trending-news-data">
+
+                        <div class="article-data">
+                            <span>13 Apr 2022</span>
+                            <span class="article-data-spacer"></span>
+                            <span>10 Min read</span>
+                        </div>
+
+                        <h3 class="title article-title">10 Snacks to Munch on</h3>
+
+                    </div>
+                </a>
+
+                <a href="https://www.masterclass.com/articles/10-street-photography-tips-and-tricks"
+                    class="trending-news-box">
+                    <div class="trending-news-img-box">
+                        <span class="trending-number place-items-center">02</span>
+                        <img src="images/trending/trending_1.jpg" alt="Trending news 2" class="article-image">
+                    </div>
+
+                    <div class="trending-news-data">
+
+                        <div class="article-data">
+                            <span>28 Mar 2022</span>
+                            <span class="article-data-spacer"></span>
+                            <span>7 Min read</span>
+                        </div>
+
+                        <h3 class="title article-title">Street Photography</h3>
+
+                    </div>
+                </a>
+
+                <a href="https://traveltriangle.com/blog/best-summer-holiday-destinations-in-the-world/"
+                    class="trending-news-box">
+                    <div class="trending-news-img-box">
+                        <span class="trending-number place-items-center">03</span>
+                        <img src="images/trending/trending_2.jpg" alt="Trending news 3" class="article-image">
+                    </div>
+
+                    <div class="trending-news-data">
+
+                        <div class="article-data">
+                            <span>21 Mar 2022</span>
+                            <span class="article-data-spacer"></span>
+                            <span>5 Min read</span>
+                        </div>
+
+                        <h3 class="title article-title">Summer Holiday Destinations</h3>
+
+                    </div>
+                </a>
+
+                <a href="https://posterjack.ca/blogs/inspiration/top-11-low-light-photography-tips-take-great-pictures-without-a-flash"
+                    class="trending-news-box">
+                    <div class="trending-news-img-box">
+                        <span class="trending-number place-items-center">04</span>
+                        <img src="images/trending/trending_3.jpg" alt="Trending news 4" class="article-image">
+                    </div>
+
+                    <div class="trending-news-data">
+
+                        <div class="article-data">
+                            <span>18 Mar 2022</span>
+                            <span class="article-data-spacer"></span>
+                            <span>6 Min read</span>
+                        </div>
+
+                        <h3 class="title article-title">Low Light Photography</h3>
+
+                    </div>
+                </a>
+
+                <a href="https://www.miraclegro.com/en-us/library/gardening-basics/10-top-gardening-tips-beginners"
+                    class="trending-news-box">
+                    <div class="trending-news-img-box">
+                        <span class="trending-number place-items-center">05</span>
+                        <img src="images/trending/trending_4.jpg" alt="Trending news 5" class="article-image">
+                    </div>
+
+                    <div class="trending-news-data">
+
+                        <div class="article-data">
+                            <span>5 Mar 2022</span>
+                            <span class="article-data-spacer"></span>
+                            <span>3 Min read</span>
+                        </div>
+
+                        <h3 class="title article-title">Gardening Tips for Beginners</h3>
+
+                    </div>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- Quick read -->
+
+    <section class="quick-read section">
+
+        <div class="container">
+
+            <h2 class="title section-title" data-name="Quick read">Quick read</h2>
+
+            <!-- Slider main container -->
+            <div class="swiper">
+
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+
+                    <!-- Slides -->
+                    <a href="https://www.wrike.com/blog/wfh-hybrid-office-which-works-best-for-you/"
+                        class="article swiper-slide">
+                        <img src="images/quick_read/quick_read_1.jpg" alt="Quick Read article 1" class="article-image">
+
+                        <div class="article-data-container">
+                            <div class="article-data">
+                                <span>13 Feb 2022</span>
+                                <span class="article-data-spacer"></span>
+                                <span>11 Min read</span>
+                            </div>
+                            <h3 class="title article-title">Hybrid or WFH?</h3>
+                        </div>
+                    </a>
+                    <!-- Slides -->
+                    <a href="https://www.goodtherapy.org/blog/134-activities-to-add-to-your-self-care-plan/"
+                        class="article swiper-slide">
+                        <img src="images/quick_read/quick_read_2.jpg" alt="Quick Read article 2" class="article-image">
+
+                        <div class="article-data-container">
+                            <div class="article-data">
+                                <span>11 Jan 2022</span>
+                                <span class="article-data-spacer"></span>
+                                <span>8 Min read</span>
+                            </div>
+                            <h3 class="title article-title">Self-care activities</h3>
+                        </div>
+                    </a>
+                    <!-- Slides -->
+                    <a href="https://www.indiacarnews.com/news/new-car-launches-global-unveilings-in-march-2022-12-models-51052/"
+                        class="article swiper-slide">
+                        <img src="images/quick_read/quick_read_3.jpg" alt="Quick Read article 3" class="article-image">
+
+                        <div class="article-data-container">
+                            <div class="article-data">
+                                <span>22 Jan 2022</span>
+                                <span class="article-data-spacer"></span>
+                                <span>15 Min read</span>
+                            </div>
+                            <h3 class="title article-title">New Car Launches</h3>
+                        </div>
+                    </a>
+                    <!-- Slides -->
+                    <a href="https://digital-photography-school.com/ultimate-guide-night-photography/"
+                        class="article swiper-slide">
+                        <img src="images/quick_read/quick_read_4.jpg" alt="Quick Read article 4" class="article-image">
+
+                        <div class="article-data-container">
+                            <div class="article-data">
+                                <span>12 Mar 2022</span>
+                                <span class="article-data-spacer"></span>
+                                <span>8 Min read</span>
+                            </div>
+                            <h3 class="title article-title">Night Photography</h3>
+                        </div>
+                    </a>
+                    <!-- Slides -->
+                    <a href="https://www.pexels.com/search/desktop%20backgrounds/" class="article swiper-slide">
+                        <img src="images/quick_read/quick_read_5.jpg" alt="Quick Read article 5" class="article-image">
+
+                        <div class="article-data-container">
+                            <div class="article-data">
+                                <span>16 Jan 2022</span>
+                                <span class="article-data-spacer"></span>
+                                <span>4 Min read</span>
+                            </div>
+                            <h3 class="title article-title">Best Desktop Wallpapers</h3>
+                        </div>
+                    </a>
+                    <!-- Slides -->
+                    <a href="https://www.harpersbazaar.com/wedding/planning/g29837545/destination-wedding-locations/"
+                        class="article swiper-slide">
+                        <img src="images/quick_read/quick_read_6.jpg" alt="Quick Read article 6" class="article-image">
+
+                        <div class="article-data-container">
+                            <div class="article-data">
+                                <span>5 Jan 2022</span>
+                                <span class="article-data-spacer"></span>
+                                <span>12 Min read</span>
+                            </div>
+                            <h3 class="title article-title">Wedding Destinations</h3>
+                        </div>
+                    </a>
+                </div>
+
+
+                <!-- Navigation buttons in Swiper -->
+                <div class="swiper-button-prev swiper-controls"></div>
+                <div class="swiper-button-next swiper-controls"></div>
+
+                <!-- Pagination to show the slides-->
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Older posts -->
+    <section class="older-posts section">
+
+        <div class="container">
+
+            <h2 class="title section-title" data-name="Older posts">Older posts</h2>
+
+            <div class="older-posts-grid-wrapper d-grid">
+
+                <a href="https://frozendessertsupplies.com/blogs/news/americas-top-10-favorite-ice-cream-flavors"
+                    class="article d-grid">
+                    <div class="older-posts-article-image-wrapper">
+                        <img src="images/older_posts/older_posts_1.jpg" alt="Older Post 1" class="article-image">
+                    </div>
+
+                    <div class="article-data-container">
+
+                        <div class="article-data">
+                            <span>30 Dec 2021</span>
+                            <span class="article-data-spacer"></span>
+                            <span>10 Min read</span>
+                        </div>
+
+                        <h3 class="title article-title">Must Try Ice cream Flavors</h3>
+                        <p class="article-description">Here are the top 10 flavors and some great toppings to enhance
+                            that ice cream cup of yours.</p>
+
+                    </div>
+                </a>
+
+                <a href="https://www.cornishcoffee.co.uk/why-coffee-should-be-your-go-to-winter-beverage/#:~:text=1.,protecting%20it%20from%20the%20elements."
+                    class="article d-grid">
+                    <div class="older-posts-article-image-wrapper">
+                        <img src="images/older_posts/older_posts_2.jpg" alt="Older Post 2" class="article-image">
+                    </div>
+
+                    <div class="article-data-container">
+
+                        <div class="article-data">
+                            <span>23 Dec 2021</span>
+                            <span class="article-data-spacer"></span>
+                            <span>5 Min read</span>
+                        </div>
+
+                        <h3 class="title article-title">Coffee and Winter</h3>
+                        <p class="article-description">We believe that hand-roasted coffee truly is the superior winter
+                            drink and should become your treasured companion throughout the colder months. </p>
+
+                    </div>
+                </a>
+
+                <a href="https://www.businessinsider.in/thelife/news/18-photos-show-how-drastically-the-new-york-city-skyline-has-changed-in-the-past-decade/articleshow/73074521.cms"
+                    class="article d-grid">
+                    <div class="older-posts-article-image-wrapper">
+                        <img src="images/older_posts/older_posts_3.jpg" alt="Older Post 3" class="article-image">
+                    </div>
+
+                    <div class="article-data-container">
+
+                        <div class="article-data">
+                            <span>11 Nov 2021</span>
+                            <span class="article-data-spacer"></span>
+                            <span>8 Min read</span>
+                        </div>
+
+                        <h3 class="title article-title">Skylines and New York</h3>
+                        <p class="article-description">18 photos show how drastically the New York City skyline has
+                            changed in the past decade.</p>
+
+                    </div>
+                </a>
+
+                <a href="https://www.thoughtco.com/architecture-in-italy-for-casual-traveler-177683"
+                    class="article d-grid">
+                    <div class="older-posts-article-image-wrapper">
+                        <img src="images/older_posts/older_posts_4.jpg" alt="Older Post 4" class="article-image">
+                    </div>
+
+                    <div class="article-data-container">
+
+                        <div class="article-data">
+                            <span>13 Oct 2021</span>
+                            <span class="article-data-spacer"></span>
+                            <span>14 Min read</span>
+                        </div>
+
+                        <h3 class="title article-title">Architecture in Italy</h3>
+                        <p class="article-description">Article on Architecture in Italy for the Lifelong Learner.</p>
+
+                    </div>
+                </a>
+
+                <a href="https://www.designyup.com/difference-between-typography-and-calligraphy/#:~:text=Both%20typography%20and%20calligraphy%20are,hand%2C%20calligraphy%20involves%20manual%20handwriting."
+                    class="article d-grid">
+                    <div class="older-posts-article-image-wrapper">
+                        <img src="images/older_posts/older_posts_5.jpg" alt="Older Post 5" class="article-image">
+                    </div>
+
+                    <div class="article-data-container">
+
+                        <div class="article-data">
+                            <span>15 Dec 2021</span>
+                            <span class="article-data-spacer"></span>
+                            <span>20 Min read</span>
+                        </div>
+
+                        <h3 class="title article-title">Calligraphy and Typography</h3>
+                        <p class="article-description">In case you have trouble making the difference between typography
+                            and calligraphy, you should read this article thoroughly and learn more about this topic.
+                        </p>
+
+                    </div>
+                </a>
+
+                <a href="https://wellness.mcmaster.ca/7-benefits-of-spending-time-in-nature/#:~:text=Research%20indicates%20that%20time%20spent,throughout%20the%20city%20of%20Hamilton."
+                    class="article d-grid">
+                    <div class="older-posts-article-image-wrapper">
+                        <img src="images/older_posts/older_posts_6.jpg" alt="Older Post 6" class="article-image">
+                    </div>
+
+                    <div class="article-data-container">
+
+                        <div class="article-data">
+                            <span>25 Nov 2021</span>
+                            <span class="article-data-spacer"></span>
+                            <span>10 Min read</span>
+                        </div>
+
+                        <h3 class="title article-title">Time in Nature</h3>
+                        <p class="article-description">Research indicates that time spent in nature is connected to
+                            cognitive and mental health benefits, as well as improvements in mood and emotional
+                            well-being.</p>
+
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="see-more-container">
+                <a href="#" class="btn see-more-btn place-items-center">See more <i
+                        class="ri-arrow-right-s-line"></i></i></a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Popular tags section -->
+    <section class="popular-tags section">
+
+        <div class="container">
+
+            <h2 class="title section-title" data-name="Popular tags">Popular tags</h2>
+
+            <div class="popular-tags-container d-grid">
+
+                <a href="#" class="article">
+                    <span class="tag-name">#Health</span>
+                    <img src="images/tags/health-tag.jpg" alt="Tag 1" class="article-image">
+                </a>
+
+                <a href="#" class="article">
+                    <span class="tag-name">#Fitness</span>
+                    <img src="images/tags/fitness-tag.jpg" alt="Tag 2" class="article-image">
+                </a>
+
+                <a href="#" class="article">
+                    <span class="tag-name">#Nature</span>
+                    <img src="images/tags/nature-tag.jpg" alt="Tag 3" class="article-image">
+                </a>
+
+                <a href="#" class="article">
+                    <span class="tag-name">#Technology</span>
+                    <img src="images/tags/technology-tag.jpg" alt="Tag 4" class="article-image">
+                </a>
+
+
+                <a href="#" class="article">
+                    <span class="tag-name">#Travel</span>
+                    <img src="images/tags/travel-tag.jpg" alt="Tag 5" class="article-image">
+                </a>
+
+                <a href="#" class="article">
+                    <span class="tag-name">#Food</span>
+                    <img src="images/tags/food-tag.jpg" alt="Tag 6" class="article-image">
+                </a>
+
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter section"id="newsletter">
+
+        <div class="container">
+
+            <h2 class="title section-title" data-name="Newsletter">Newsletter</h2>
+
+            <div class="form-container-inner">
+                <h6 class="title newsletter-title">Subscribe to NewsBlog</h6>
+                <p class="newsletter-description">Sign up to our newsletter, the NewsBlog, so you can be the first to
+                    find out the latest news and more.</p>
+
+                <form action="mailto:someone@gmail.com" class="form">
+                    <input class="form-input" type="text" placeholder="Enter your email address">
+                    <button class="btn form-btn" type="submit" >
+                        <i class="ri-mail-send-line" ></i>
+                    </button>
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer section">
+
+        <div class="footer-container container d-grid">
+
+            <div class="company-data">
+                <a href="index.html">
+                    <h2 class="logo">NewsBlog</h2>
+                </a>
+                <p class="company-description">Personal Blog to discuss the latest news and personal views on trending
+                    topics in Technology, Travel, Food and more.</p>
+
+                <ul class="list social-media">
+                    <li class="list-item">
+                        <a href="www.instagram.com" class="list-link"><i class="ri-instagram-line"></i></a>
+                    </li>
+                    <li class="list-item">
+                        <a href="https://www.facebook.com/" class="list-link"><i class="ri-facebook-circle-line"></i></a>
+                    </li>
+                    <li class="list-item">
+                        <a href="https://www.twitter.com/" class="list-link"><i class="ri-twitter-line"></i></a>
+                    </li>
+                    <li class="list-item">
+                        <a href="https://www.pinterest.com/" class="list-link"><i class="ri-pinterest-line"></i></a>
+                    </li>
+                </ul>
+
+                <span class="copyright-notice">&copy;2022 NewsBlog. All rights reserved.</span>
+            </div>
+
+            <div>
+                <h6 class="title footer-title">Categories</h6>
+
+                <ul class="footer-list list">
+
+                    <li class="list-item">
+                        <a href="#" class="list-link">Nature</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Fitness</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Travel</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Food</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Technology</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Health</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div>
+                <h6 class="title footer-title">Useful links</h6>
+
+                <ul class="footer-list list">
+                    <li class="list-item">
+                        <a href="#" class="list-link">Home</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Authors</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Membership</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Elements</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Tags</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div>
+                <h6 class="title footer-title">Company</h6>
+
+                <ul class="footer-list list">
+                    <li class="list-item">
+                        <a href="#" class="list-link">Careers</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Authors</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Memberships</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">Contact us</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#" class="list-link">F.A.Q</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- Swiper.js -->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!-- Custom script -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
