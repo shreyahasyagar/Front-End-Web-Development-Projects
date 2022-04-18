@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Employee Survey Form</title>
+       
+    </head>
+
+    <body bgcolor="#D6E5FA"> 
+        <center>
+            <h1>Employee Survey Form</h1>
+        </center>
+
+        <hr>
+
+        <br>
+        <table align="center" cellspacing="10">
+            <tr>
+                <td>
+                    <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+                    <label for="id">Enter your ID:</label>  </td>
+                <td>
+                    <input type="text" id ="empid" name="id"  maxlength="30" required> </td>
+            </tr>
+
+            <tr>
+                <td><label for="name">Enter your name:</label></td>
+                <td><input type="text" id="empname" name="name"  maxlength="30" required></td>
+            </tr>
+
+
+            <tr>
+              <td> <label for="email">Enter your email:</label></td>
+              <td>
+                  <input type="email" id="empmail" name="emailid"  maxlength="30" required>
+                    <input type="submit" value="Check Mail Id"></td>
+            </tr>
+
+            <tr>
+                <td> <label for="pwd">Enter your password:</label></td>
+                <td><input type="password" id="pwd" name="password" maxlength="30" required></td>
+              </tr>
+
+            <tr>
+              <td><label>What is your department?</label></td>
+              <td>
+                <select name="dept">
+                    <option>
+                        <option value="1" selected="true"> Software</option>
+                        <option value="2"> Accounts</option>
+                        <option value="3" > Sales</option>
+                        <option value="4" > Design</option>
+                        <option value="5" > Marketing</option>
+                    </option>
+                </select>
+              </td>
+            </tr>
+
+
+            <tr>
+                 <td>  <label for="about">Tell us about yourself:</label></td>
+                <td> <textarea id="empabout" name="about" rows="6" cols="35" ></textarea></td>
+            </tr>
+
+        <tr>
+            <td><label for="radio">Do you have a Bank Account?</label></td>
+            <td>
+                <input type="radio" id="bank" name="bankdet" value="1"> Yes
+                <input type="radio" id="bank" name="bankdet" value="2"> No
+            </td>
+        </tr>
+
+        <tr>
+            <td> <label for="checkbox">Select the Banks you have your account</label></td>
+            <td>
+                <input type="checkbox" id="selection" name="banks" >SBI
+                <input type="checkbox" id="selection" name="banks" >HDFC
+                <input type="checkbox" id="selection" name="banks" >AXIS
+                <input type="checkbox" id="selection" name="banks" >BOB
+                <input type="checkbox" id="selection" name="banks" >Others
+                <a href="https://en.wikipedia.org/wiki/List_of_banks_in_India">( List of Banks in India )</a>
+             </td>
+        </tr>
+
+        <tr>
+            <td><label>Please provide your feedback</label></td>
+            <td><textarea id="feedback" name="feedback" rows="2" cols="35"></textarea></td>
+        </tr>
+       </table>
+            
+       <br>
+
+       <center>
+            <input type="submit" size="20" value="Submit Form">
+        </center>
+        </form>
+    
+    </body>
+</html>

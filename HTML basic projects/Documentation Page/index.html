@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+
+<html>
+    
+        <meta charset="utf-8">
+        <title>DBMS Documentation</title>
+        <meta name="description" content="A DBMS is a software-based system that provides a management interface, which helps users control databases and data sources.">
+        
+        <!-- Using default bootstrap stylesheet(from official website) -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+        <!--full-width container that will be responsive -->
+        <div class="container-fluid">
+            <div class="row">
+                <!--bootstrap grid-->
+                <div class="col-md-2 col-sm-12 col-xs-12">
+                    <nav id="navbar">
+                        <h3>Documentation Menu</h3>
+                        <!--content stacking for small screen-->
+                        <ul class="nav nav-pills nav-stacked">
+                            <!--internal linking to sections-->
+                            <a class="nav_link" href="#Database" rel="internal">
+                                <li>What is Database?</li>
+                            </a>
+
+                            <a href="#DBMS" rel="internal">
+                                <li>What is DBMS?</li>
+                            </a>
+
+                            <a href="#Example" rel="internal">
+                                <li>Example of a DBMS</li>
+                            </a>
+
+                            <a href="#history" rel="internal">
+                                <li>History of DBMS</li>
+                            </a>
+
+                            <a href="#Characteristics" rel="internal">
+                                <li>Characteristics of DBMS</li>
+                            </a>
+                            
+                            <a href="#DbmsvsFlatFile" rel="internal">
+                                <li>DBMS vs. Flat File</li>
+                            </a>
+                            <a href="#Users" rel="internal">
+                                <li>Users of DBMS</li>
+                            </a>
+
+                            <a href="#DBMSSoftware" rel="internal">
+                                <li>Popular DBMS Software</li>
+                            </a>
+                            <a href="#Application" rel="internal">
+                                <li>Application of DBMS</li>
+                            </a>
+                            <a href="#Types" rel="internal">
+                                <li>Types of DBMS</li>
+                            </a>
+                            <a href="#Advantages" rel="internal">
+                                <li>Advantages of DBMS</li>
+                            </a>
+                            <a href="#Disadvantages" rel="internal">
+                                <li>Disadvantage of DBMS</li>
+                            </a>
+                            <a href="#NotToUse" rel="internal">
+                                <li>When not to use a DBMS system?</li>
+                            </a>
+                            <a href="#Summary" rel="internal">
+                                <li>Summary</li>
+                            </a>
+
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col-md-10 col-sm-12 col-xs-12">
+                    <main id="main-doc">
+                        <section class="main-section" id="Database">
+                            <h3 style="background:rgb(146, 185, 219);color: black;"> What is Database?</h3>
+                            <article>
+                                <p>A database is a collection of related data which represents some aspect of the real world. A database system is designed to be built and populated with data for a certain task.</p>
+                            </article>
+                        </section>
+                        <section class="main-section" id="DBMS">
+                            <h3 style="background:rgb(146, 185, 219);color: black;"> What is DBMS?</h3>
+                            <article>
+                                <p><b>Database Management System (DBMS) </b>is a software for storing and retrieving users data while considering appropriate security measures. It consists of a group of programs which manipulate the database. 
+                                    The DBMS accepts the request for data from an application and instructs the operating system to provide the specific data. In large systems, a DBMS helps users and other third-party software to store and retrieve data.</p>
+                                    <p>DBMS allows users to create their own databases as per their requirement. The term “DBMS” includes the user of the database and other application programs. It provides an interface between the data and the software application.</p>
+                            </article>
+                        </section>
+                        <section class="main-section" id="Example">
+                            <h3 style="background:rgb(146, 185, 219);color: black;">Example of a DBMS</h3>
+                            <article>
+                                <p>Let us see a simple example of a university database. This database is maintaining information concerning students, courses, and grades in a university environment. The database is organized as five files:</p>
+                                
+                                    <li> The STUDENT file stores data of each student</li>
+                                    <li> The COURSE file stores contain data on each course.</li>
+                                    <li>The SECTION stores the information about sections in a particular course.</li>
+                                    <li>The GRADE file stores the grades which students receive in the various sections</li>
+                                    <li>The TUTOR file contains information about each professor.</li>
+                                
+                                    <br>
+                                    <p>To define DBMS:</p>
+                                
+                                    <li> We need to specify the structure of the records of each file by defining the different types of data elements to be stored in each record.</li>
+                                    <li> We can also use a coding scheme to represent the values of a data item.</li>
+                                    <li> Basically, your Database will have 5 tables with a foreign key defined amongst the various tables.</li>
+                                
+                            </article>
+                        </section>
+                        <section class="main-section" id="history">
+                            <h3 style="background:rgb(146, 185, 219);color: black;">History of DBMS</h3>
+                            <article>
+                                <p>Here, are the important landmarks from the history:</p>
+                                
+                                <li>1960: Charles Bachman designed first DBMS system</li>
+                                <li>1970: Codd introduced Information Management System (IMS)</li>
+                                <li>1976:  Peter Chen coined and defined the Entity-relationship model also know as the ER model</li>
+                                <li>1980: Relational Model becomes a widely accepted database component</li>
+                                <li>1985: Object-oriented DBMS develops.</li>
+                                <li>1990s: Incorporation of object-orientation in relational DBMS.</li>
+                                <li>1991: Microsoft ships MS access, a personal DBMS and that displaces all other personal DBMS products.</li>
+                                <li>1995: First Internet database applications</li>
+                                <li>1997: XML applied to database processing. Many vendors begin to integrate XML into DBMS products.</li>
+                            </article>
+                            
+                        </section>
+
+                        <section class="main-section" id="Characteristics">
+                            <h3 style="background:rgb(146, 185, 219);color: black;">Characteristics of DBMS</h3>
+                            <article>
+                                <p>Here are the characteristics and properties of Database Management System:</p>
+                                <li>Provides security and removes redundancy</li>
+                                <li>Self-describing nature of a database system</li>
+                                <li>Insulation between programs and data abstraction</li>
+                                <li>Support of multiple views of the data</li>
+                                <li>Sharing of data and multiuser transaction processing</li>
+                                <li>Database Management Software allows entities and relations among them to form tables.</li>
+                                <li>It follows the ACID concept ( Atomicity, Consistency, Isolation, and Durability).</li>
+                                <li>DBMS supports multi-user environment that allows users to access and manipulate data in parallel.</li>
+                            </article>
+                        </section>
+                        <section class="main-section" id="DbmsvsFlatFile">
+                            <h3 style="background:rgb(146, 185, 219);color: black;">DBMS vs. Flat File</h3>
+
+                        <table border="1">
+                            <tr>
+                                <thead>
+                                    <th>DBMS</th>
+                                    <th>Flat File Management System</th>
+                                </thead>
+                            </tr>
+                            
+                                <tr>
+                                    <td><li>Multi-user access</li></td>
+                                    <td><li>It does not support multi-user access</li></td>
+                                </tr>
+
+                                <tr>
+                                    <td><li>Design to fulfill the need for small and large businesses</li></td>
+                                    <td><li>It is only limited to smaller DBMS system.</li></td>
+                                </tr>
+
+                                <tr>
+                                    <td><li>Remove redundancy and Integrity</li></td>
+                                    <td><li>Redundancy and Integrity issues</li></td>
+                                </tr>
+
+                                <tr>
+                                    <td><li>Expensive. </li></td>
+                                    <td><li>Cheaper</li></td>
+                                </tr>
+
+                                <tr>
+                                    <td><li>Easy to implement complicated transactions</li></td>
+                                    <td><li>No support for complicated transactions</li></td>
+                                </tr>
+
+                            
+                        </table>
+                        </section>
+
+                        <section class="main-section" id="Users">
+                            <h3 style="background:rgb(146, 185, 219);color: black;">Users of DBMS</h3>
+                            <p>Following are the various category of users of DBMS</p>
+                            <table border="1">
+                                
+                                    
+                                    <tr>
+                                        <th>Component Name</th>
+                                        <th>Task</th>
+
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td >Application Programmers</td>
+                                        <td >The Application programmers write programs in various programming languages to interact with databases.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td >Database Administrators</td>
+                                        <td >Database Admin is responsible for managing the entire DBMS system. He/She is called Database admin or DBA.</tr>
+
+                                    <tr>
+                                        <td>End-Users</td>
+                                        <td>The end users are the people who interact with the database management system. They conduct various operations on database like retrieving, updating, deleting, etc.</tr>
+
+                                
+                            </table>
+
+                        </section>
+
+                        <section class="main-section" id="DBMSSoftware">
+                            <h3 style="background:rgb(146, 185, 219);color: black;">Popular DBMS Software</h3>
+                            <p>Here, is the list of some popular DBMS system:</p>
+                            <li>MySQL</li>
+                            <li>Microsoft Access</li>
+                            <li>Oracle</li>
+                            <li>PostgreSQL</li>
+                            <li>dBASE</li>
+                            <li>FoxPro</li>
+                             <li>SQLite</li>
+                            <li>IBM DB2</li>
+                            <li>LibreOffice Base</li>
+                            <li>MariaDB</li>
+                            <li>Microsoft SQL Server etc.</li>
+
+
+                        </section>
+                        <section class="main-section" id="Application">
+                            <h3 style="background:rgb(146, 185, 219);color: black;">Application of DBMS</h3>
+                            <p>Below are the popular database system applications:</p>
+                            <table border="1">
+                                
+                                    
+                                        <tr>
+                                        <th>Sector</th>
+                                        <th>Use of DBMS</th>
+                                        </tr>
+                                    
+                                
+                               
+                                    <tr>
+                                        <td>Banking</td>
+                                        <td>For customer information, account activities, payments, deposits, loans, etc</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Airlines</td>
+                                        <td>For reservations and schedule information.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Universities</td>
+                                        <td>For student information, course registrations, colleges and grades.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Telecommunication</td>
+                                        <td>	It helps to keep call records, monthly bills, maintaining balances, etc.</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Sales</td>
+                                        <td>Use for storing customer, product & sales information.</td>
+                                    </tr>
+
+                                
+                            </table>
+                        </section>
+                        <section class="main-section" id="Types">
+                            <h3 style="background:rgb(146, 185, 219);color: black;">Types of DBMS</h3>
+                            <center>
+                                <img src="https://www.guru99.com/images/1/122118_0515_WhatisDBMSA1.png" alt="Types of DBMS"> 
+                                <h4>Types of DBMS</h4>
+                            </center>
+                            <br>
+                            <p>The main Four Types of Database Management System are:</p>
+                            <li>Hierarchical database</li>
+                            <li>Network database</li>
+                            <li>Relational database</li>
+                            <li>Object-Oriented database</li>
+
+                            <h3>Hierarchical DBMS</h3>
+                            <p>In a Hierarchical database, model data is organized in a tree-like structure. Data is Stored Hierarchically (top down or bottom up) format.
+                                 Data is represented using a parent-child relationship. In Hierarchical DBMS parent may have many children, but children have only one parent.</p>
+
+                            <h3>Network Model</h3>
+                            <p>The network database model allows each child to have multiple parents. It helps you to address the need to model more complex relationships like as the orders/parts many-to-many relationship. 
+                                In this model, entities are organized in a graph which can be accessed through several paths.</p>
+
+                            <h3>Relational Model</h3>
+                            <p>Relational DBMS is the most widely used DBMS model because it is one of the easiest. This model is based on normalizing data in the rows and columns of the tables. 
+                                Relational model stored in fixed structures and manipulated using SQL.</p>
+
+                            <h3>Object-Oriented Model</h3>
+                            <p>
+                                In Object-oriented Model data stored in the form of objects. The structure which is called classes which display data within it. 
+                                It is one of the components of DBMS that defines a database as a collection of objects which stores both data members values and operations.</p>
+                        </section>
+
+                        <section class="main-section" id="Advantages">
+                            <h3 style="background:rgb(146, 185, 219);color: black;">Advantages of DBMS</h3>
+                            <li>DBMS offers a variety of techniques to store & retrieve data</li>
+                            <li>DBMS serves as an efficient handler to balance the needs of multiple applications using the same data</li>
+                            <li>Uniform administration procedures for data</li>
+                            <li>Application programmers never exposed to details of data representation and storage.</li>
+                            <li>A DBMS uses various powerful functions to store and retrieve data efficiently.</li>
+                            <li>Offers Data Integrity and Security</li>
+                            <li>The DBMS implies integrity constraints to get a high level of protection against prohibited access to data.</li>
+                            <li>A DBMS schedules concurrent access to the data in such a manner that only one user can access the same data at a time</li>
+                            <li>Reduced Application Development Time</li>
+                        </section>
+
+                        <section class="main-section" id="Disadvantages">
+                            <h3 style="background:rgb(146, 185, 219);color: black;">Disdvantages of DBMS</h3>
+                            <p>DBMS may offer plenty of advantages but, it has certain flaws-</p>
+                            <li>Cost of Hardware and Software of a DBMS is quite high which increases the budget of your organization.</li>
+                            <li>Most database management systems are often complex systems, so the training for users to use the DBMS is required.</li>
+                            <li>In some organizations, all data is integrated into a single database which can be damaged because of electric failure or database is corrupted on the storage media</li>
+                            <li>Use of the same program at a time by many users sometimes lead to the loss of some data.</li>
+                            <li>DBMS can not perform sophisticated calculations</li>
+                        </section>
+
+                        <section class="main-section" id="NotToUse">
+                            <h3 style="background:rgb(146, 185, 219);color: black;">When not to use a DBMS system?</h3>
+                            <p>Although, DBMS system is useful. It is still not suited for specific task mentioned below:</p>
+
+                            <p>Not recommended when you do not have the budget or the expertise to operate a DBMS. In such cases, Excel/CSV/Flat Files could do just fine.</p>
+                            
+                        </section>
+
+                        <section class="main-section" id="Summary">
+                            <h3 style="background:rgb(146, 185, 219);color: black;">Summary</h3>
+                            <li>DBMS definition: A database is a collection of related data which represents some aspect of the real world</li>
+                            <li>The full form of DBMS is Database Management System. DBMS stands for Database Management System is a software for storing and retrieving users data by considering appropriate security measures.</li>
+                            <li>DBMS Provides security and removes redundancy</li>
+                            <li>DBMS has many advantages over tradition Flat File management system</li>
+                            <li>Some Characteristics of DBMS are Security, Self-describing nature, Insulation between programs and data abstraction, Support of multiple views of the data, etc.</li>
+                            <li>End-Users, Application Programmers, and Database Administrators are they type of users who access a DBMS</li>
+                            <li>DBMS is widely used in Banking, Airlines, Telecommunication, Finance and other industries</li>
+                            <li>The main Four DBMS types are 1) Hierarchical 2) Network 3) Relational 4) Object-Oriented DBMS</li>
+                            <li>DBMS serves as an efficient handler to balance the needs of multiple applications using the same data</li>
+                            <li>Cost of Hardware and Software of a DBMS is quite high which increases the budget of your organization</li>
+
+                        </section>
+                    </main>
+                </div>
+            </div>
+        
+        </div>
+    
+</html>
