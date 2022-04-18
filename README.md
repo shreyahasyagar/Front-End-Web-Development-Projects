@@ -30,7 +30,7 @@ Personal Web Development Projects
   - A website that is built using HTML,CSS and JS. It is a personal portfolio website.
 
 10) Restaurant website
-  - A website that is built using HTML,CSS and JS. It's a landing page for a Restaurant.
+  - A website that is built using HTML and CSS. It's a landing page for a Restaurant.
 
 11) Travel website
   - A website that is built using HTML,CSS and JS.It's a landing page for a Travel company.
